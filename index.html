@@ -21,9 +21,12 @@
         <!--Book List at the Right-->
         <div id="bookListArea" class="bookAreas darktone pageRadius">
             <div id="topControlPanel" class="pageRadius noBottomRadius">
-                    <label class="topControl whiteFont" style="width: 50%">Title</label>
+                    <label class="topControl whiteFont">Title</label>
                     <label class="topControl whiteFont">Author</label>
                     <label class="topControl whiteFont">Read</label>
+            </div>
+            <div id="bookArrayList">
+
             </div>
         </div>
 
@@ -35,7 +38,7 @@
             <label class="newBookElement whiteFont">Title:</label>
             <input class="newBookElement whiteFont bookInputField" type="text" name="titleInput" id="titleInput">
             <label class="newBookElement whiteFont">Already read the book?</label>
-            <select class="newBookElement" style="background-color: white; padding: 5px">
+            <select id="readSelector" class="newBookElement" style="background-color: white; padding: 5px">
                 <option>Yes</option>
                 <option>No</option>
             </select>
