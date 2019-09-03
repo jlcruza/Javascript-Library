@@ -1,7 +1,17 @@
 let myLibrary = [];
 
 const newBookBtn = document.querySelector("#newBookButton");
-newBookBtn.addEventListener('click', addBookToLibrary());
+const cancelBookBtn = document.querySelector("#cancelNewBook");
+const saveBookBtn = document.querySelector("#saveNewBook");
+
+const AddBookPanel = document.querySelector("#newBookPanel");
+
+newBookBtn.addEventListener('click', ()=>{
+    AddBookPanel.classList.remove("invisible");
+});
+cancelBookBtn.addEventListener('click', ()=>{
+    AddBookPanel.classList.add("invisible");
+})
 
 function Book(author, title, read) {
   // the constructor...

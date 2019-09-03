@@ -12,18 +12,36 @@
         <!--Book Image at the Left-->
         <div id="bookImgArea" class="bookAreas pageRadius">
             <img id="bookFullImg" class="pageRadius" src="./assets/book1.jpg">
-            <div id="bookDescArea" class="darktone pageRadius">
+            <div id="bookDescArea" class="darktone pageRadius noTopRadius">
                 <h2 id="bookTitle" class="whiteFont childSelectedBookInfo">Book Title</h2>
                 <h4 id="bookInfo" class="whiteFont childSelectedBookInfo">Brief description about the selected book</h4>
             </div>
         </div>
 
-        <!--Book List at the Rigth-->
+        <!--Book List at the Right-->
         <div id="bookListArea" class="bookAreas darktone pageRadius">
-            <div id="topControlPanel" class="pageRadius">
+            <div id="topControlPanel" class="pageRadius noBottomRadius">
                     <label class="topControl whiteFont" style="width: 50%">Title</label>
                     <label class="topControl whiteFont">Author</label>
                     <label class="topControl whiteFont">Read</label>
+            </div>
+        </div>
+
+        <!--Right Side Panel for New Books-->
+        <div id="newBookPanel" class="darktone invisible">
+            <h2 id="newBookLabel" class="whiteFont noBottomRadius">New Book</h2>
+            <label class="newBookElement whiteFont">Author:</label>
+            <input class="newBookElement whiteFont bookInputField" type="text" name="authorInput" id="authorInput">
+            <label class="newBookElement whiteFont">Title:</label>
+            <input class="newBookElement whiteFont bookInputField" type="text" name="titleInput" id="titleInput">
+            <label class="newBookElement whiteFont">Already read the book?</label>
+            <select class="newBookElement" style="background-color: white; padding: 5px">
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+            <div id="newBookBotton">
+                    <button id="cancelNewBook" class="newBookBottomButtons whiteFont" style="color: red">Cancel</button>
+                    <button id="saveNewBook" class="newBookBottomButtons whiteFont" style="color: lawngreen">Save</button>
             </div>
         </div>
 
